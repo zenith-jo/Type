@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+   /*  COLORS */
+    --BGCOLOR: #030103;
+    --BLUECOLOR: rgb(244, 215, 167);
+    --BLUECOLORLIGHT: var(--BLUECOLOR);
+    --ORANGECOLOR: #ca7331;
+    --GRAYCOLOR: #E0E2DB;
+
+  /*   SIZES */
+  --HEADERFONTSIZE: 28px;
+  --ICONSIZE: 28PX;
+
+
+}
+
+body{
+    background: hsla(236, 100%, 8%, 1);
+
+    background: linear-gradient(90deg, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000328", endColorstr="#00458E", GradientType=1 );
+   /*  background-color: var(--BGCOLOR);
+    background-image: linear-gradient(60deg, black, rgb(33, 30, 30), black); */
+    position: relative;  
+
+}
+
+svg {
+    display: inline;
+   width: 40px;
+   margin-top: 18px;  
+   margin-left: 10px;
+   margin-right: 10px;
+   fill: var(--BLUECOLORLIGHT);
+}
+
+p{
+    display: inline;    
+}
+
+.header {
+    color: var(--BLUECOLOR);
+    font-size: var(--HEADERFONTSIZE);
+    position: absolute;
+    top: 23px;
+}
+
+#topBar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+}
+#optBar {
+    padding-right: 20px;
+    place-self: end;
+}
+ 
+#timer{
+    justify-self: start;
+    font-size: 28px;
+    color: var(--ORANGECOLOR);
+    margin-left: 20px;
+
+}
+#restart {
+    justify-self: end; 
+    margin-right: 20px;
+}
+
+#game{
+    height: 80vh;
+  /*  display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;*/
+    padding: 20px 50px 0px 50px ;
+/*     margin-top: 30px;
+ */
+
+}
+
+
+#word {
+    display: inline-block;
+    margin: 0 10px 20px 0px;
+    color: var(--GRAYCOLOR);
+    font-family: Quicksand, sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    padding: 0;
+}
+
+#cursor{
+    width: 5px;
+    height: 20px;
+    color: aqua;
+}
+
+/* span.current {
+    color: red;
+}
+ */
+.correct{
+    color: #6d10ee;
+}
+
+.incorrect {
+    color: red;
+}
+
+.result, .source{
+    color:white;
+    font-size: 36px;
+    font-family: Quicksand, sans-serif;
+    font-weight: 500;
+    padding: 20px;
+
+
+}
+.current{
+    color: var(--ORANGECOLOR)
+}
